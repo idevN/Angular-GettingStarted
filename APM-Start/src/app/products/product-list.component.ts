@@ -90,7 +90,9 @@ ngOnInit():void {
 
 //interface for custom types, we can use interface as data type
 
-
+onRatingClicked(message:string): void {
+    this.pageTitle='Product List: '+message;
+}
 
 
 
