@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule} from '@angular/forms'
 import { AppComponent } from './app.component';
 import {ProductListComponent} from './products/product-list.component';
-import {ProductFilterPipe} from './products/product-filter-pipe'
+import {ProductFilterPipe} from './products/product-filter.pipe'
 import {StarComponent} from './shared/star.component'
-
+import {HttpModule} from '@angular/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +15,8 @@ import {StarComponent} from './shared/star.component'
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

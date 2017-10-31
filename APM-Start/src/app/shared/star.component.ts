@@ -3,8 +3,9 @@ Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector:'ai-star',
-    templateUrl:'./star.component.html',
-    styleUrls: ['./star.component.css']
+    moduleId:module.id,
+    templateUrl:'star.component.html',
+    styleUrls: ['star.component.css']
 })
 export class StarComponent implements OnChanges{
     @Input() rating:number;
